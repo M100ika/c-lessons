@@ -26,7 +26,7 @@ int main(){
             int noteIndex = ch - '1';
             if (noteIndex >= 0 && noteIndex <= 6) {
                 noteComb |= 1 << noteIndex;
-                cout << i << ": " << noteComb << endl;
+              //  cout << i+1 << ": " << noteComb << endl;
             }
         }
         melody[i] = noteComb;
@@ -40,6 +40,6 @@ int main(){
         if (notes & SOL) cout << "SOL ";
         if (notes & LA) cout << "LA ";
         if (notes & SI) cout << "SI ";
-        cout << endl;
+        cout << " ";
     }
 }
